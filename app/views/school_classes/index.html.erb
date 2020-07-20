@@ -1,0 +1,9 @@
+<h1>Index</h1>
+
+<a href="../school_classes/new">Create Class</a>
+
+<h3>Classes</h3>
+
+<%@school_classes.each do |c| %>
+  <p><a href="../school_classes/<%=c.id%>"><%=c.title %></a> - Room: <%=c.room_number %></p>
+<% end %>
